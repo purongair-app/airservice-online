@@ -1,15 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PUROnGAIR_ระบบบริหารธุรกิจบ้านแอร์บ้าน </title>
-    <style>
-        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
-        iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#071426">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="PUROnGAIR">
+  <title>PUROnGAIR — ระบบบริหารร้าน</title>
+  <link rel="manifest" href="/airservice-online/manifest.webmanifest">
+  <link rel="icon" href="/airservice-online/icons/icon-192.svg" type="image/svg+xml">
+  <style>
+    *{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#eef5f9;font-family:system-ui,-apple-system,"Noto Sans Thai",sans-serif}
+    #appFrame{position:fixed;inset:0;width:100%;height:100%;border:0;background:white}
+    #installBtn{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom));z-index:40;border:0;border-radius:999px;background:#071426;color:#fff;padding:11px 16px;font-weight:800;box-shadow:0 8px 30px #0004}#installBtn[hidden]{display:none}
+    .gate{position:fixed;inset:0;z-index:60;display:grid;place-items:center;padding:22px;background:linear-gradient(145deg,#071426,#087bad)}.gate[hidden]{display:none}
+    .card{width:min(92vw,420px);background:#fff;border-radius:24px;padding:26px;box-shadow:0 20px 70px #0005;text-align:center}.logo{width:88px;height:88px;object-fit:contain;margin:0 auto 12px}.card h2{margin:7px 0}.card p{color:#64748b;line-height:1.6}
+    .card button{width:100%;margin-top:10px;border:0;border-radius:13px;padding:13px 15px;font-size:16px;font-weight:800;background:#087bad;color:#fff}.card button.secondary{background:#eef6fa;color:#0b658b}.status{min-height:22px;margin-top:10px;color:#64748b}
+    #shellModal{position:fixed;inset:0;z-index:70;display:grid;place-items:center;padding:20px;background:#0008}#shellModal[hidden]{display:none}#shellModalBody{width:min(92vw,430px);max-height:86vh;overflow:auto;background:#fff;border-radius:22px;padding:24px;color:#10243a}#shellModalBody h2{margin-top:0}#shellModalBody button{width:100%;margin-top:10px;border:1px solid #cbd5e1;border-radius:12px;padding:12px;background:#fff;font-weight:800}
+    .toast{position:fixed;left:50%;bottom:30px;transform:translateX(-50%);z-index:100;background:#071426;color:#fff;padding:12px 18px;border-radius:12px;font-weight:800;max-width:90vw;text-align:center;box-shadow:0 8px 30px #0004}
+  </style>
 </head>
 <body>
-    <iframe src="https://script.google.com/macros/s/AKfycbzFdxBrdf-_uzglEByXMS6DRYABvIfjFUtVB3Sn5-MmstO-rOVyeeilpwf7EL2k7aEM4Q/exec"></iframe>
+  <iframe id="appFrame" title="PUROnGAIR" src="https://script.google.com/macros/s/AKfycbzFdxBrdf-_uzglEByXMS6DRYABvIfjFUtVB3Sn5-MmstO-rOVyeeilpwf7EL2k7aEM4Q/exec?shell=1" allow="geolocation *; publickey-credentials-get *; publickey-credentials-create *; clipboard-write *" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+  <button id="installBtn">⇩ ติดตั้งแอป</button>
+  <section id="bioGate" class="gate" hidden>
+    <div class="card">
+      <img class="logo" src="/airservice-online/icons/icon-192.svg" alt="โลโก้ร้าน">
+      <small>เข้าสู่ระบบรวดเร็ว</small><h2>สแกนนิ้ว / ใบหน้า</h2>
+      <p>ยืนยันด้วยระบบล็อกหน้าจอของอุปกรณ์เพื่อเปิด PUROnGAIR</p>
+      <button id="bioUnlock">ยืนยันด้วยสแกนนิ้ว / ใบหน้า</button>
+      <button id="bioPassword" class="secondary">ใช้รหัสผ่านแทน</button>
+      <div id="bioStatus" class="status"></div>
+    </div>
+  </section>
+  <div id="shellModal" hidden><div id="shellModalBody"></div></div>
+  <script src="/airservice-online/app.js"></script>
 </body>
 </html>
