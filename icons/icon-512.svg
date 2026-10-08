@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-<defs><linearGradient id="b" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#0b4a86"/><stop offset="1" stop-color="#12a5d2"/></linearGradient></defs>
-<rect width="512" height="512" rx="96" fill="#fff"/>
-<path d="M256 42 410 92v142c0 109-64 190-154 236C166 424 102 343 102 234V92z" fill="url(#b)" stroke="#f6b600" stroke-width="16"/>
-<path d="M166 156c30-54 150-67 182 4-21-16-45-20-69-10-22 9-31 28-29 52 2 28 24 51 53 56-28 27-82 24-112-5-33-31-42-65-25-97z" fill="#fff"/>
-<circle cx="232" cy="186" r="14" fill="#061f3c"/><circle cx="292" cy="185" r="14" fill="#061f3c"/>
-<path d="M242 217c12 9 27 9 39 0" fill="none" stroke="#061f3c" stroke-width="8" stroke-linecap="round"/>
-<rect x="111" y="290" width="290" height="78" rx="30" fill="#fff" stroke="#f6b600" stroke-width="8"/>
-<text x="256" y="338" text-anchor="middle" font-family="Arial,sans-serif" font-size="45" font-weight="900" fill="#083a76">AIR FRIEND</text>
-<text x="256" y="401" text-anchor="middle" font-family="Arial,sans-serif" font-size="32" font-weight="800" fill="#fff">SERVICE</text>
+<defs>
+  <linearGradient id="r" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff1616"/><stop offset=".48" stop-color="#e00000"/><stop offset="1" stop-color="#870000"/></linearGradient>
+  <linearGradient id="w" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset=".7" stop-color="#f5f5f5"/><stop offset="1" stop-color="#cfd2d6"/></linearGradient>
+  <filter id="s"><feDropShadow dx="0" dy="8" stdDeviation="5" flood-color="#000" flood-opacity=".5"/></filter>
+</defs>
+<rect x="14" y="14" width="484" height="484" rx="70" fill="url(#r)" stroke="#7a0000" stroke-width="14"/>
+<rect x="30" y="30" width="452" height="452" rx="58" fill="none" stroke="#ff7777" stroke-width="8"/>
+<path d="M115 391V115h113c89 0 142 42 142 112 0 76-58 123-151 123h-33v41zm71-205v102h34c45 0 76-21 76-53 0-31-26-49-72-49z" fill="url(#w)" stroke="#7a0000" stroke-width="9" filter="url(#s)"/>
+<text x="345" y="420" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" font-size="48" font-weight="900" fill="url(#w)" stroke="#6a0000" stroke-width="3">PUROnGAIR</text>
 </svg>
