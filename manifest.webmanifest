@@ -1,0 +1,16 @@
+{
+  "name":"PUROnGAIR — ระบบบริหารร้าน",
+  "short_name":"PUROnGAIR",
+  "description":"ระบบบริหารธุรกิจร้านแอร์บ้าน",
+  "id":"/airservice-online/",
+  "start_url":"/airservice-online/",
+  "scope":"/airservice-online/",
+  "display":"standalone",
+  "background_color":"#eef5f9",
+  "theme_color":"#071426",
+  "lang":"th",
+  "icons":[
+    {"src":"/airservice-online/icons/icon-192.svg","sizes":"192x192","type":"image/svg+xml","purpose":"any"},
+    {"src":"/airservice-online/icons/icon-512.svg","sizes":"512x512","type":"image/svg+xml","purpose":"any maskable"}
+  ]
+}
