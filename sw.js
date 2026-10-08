@@ -1,4 +1,4 @@
-const CACHE='purongair-pwa-v710';
+const CACHE='purongair-pwa-v850';
 const ASSETS=[
   '/airservice-online/',
   '/airservice-online/index.html',
